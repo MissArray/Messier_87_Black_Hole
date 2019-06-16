@@ -4,25 +4,30 @@ body {
     background-color: black;
 }
 
-#star-container {
+#black-hole-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 5;
+}
+
+#black-hole {
+    position: relative;
+    height: 95vmin;
+    width: auto;
+    margin: 0 auto;
+    animation: slow-spin 120s linear infinite;
+    z-index: 10;
 }
 
 #star {
-    justify-self: center;
+    position: absolute;
     height: 5vmin;
     width: auto;
     margin: 0 auto;
     animation: vanishing 6s linear infinite;
-}
-
-
-#black-hole {
-    height: 95vmin;
-    width: auto;
-    align-self: center;
-    margin: 0 auto;
-    animation: slow-spin 120s linear infinite;
+    z-index: 20;
 }
 
 @keyframes vanishing {
