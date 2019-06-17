@@ -1,7 +1,15 @@
+/*Specifying the body background image in the CSS *and* including it inline in the index displays the image responsively. Not so if the img tag is omitted.*/
+
 body {
     display: flex;
     justify-content: center;
     background-color: black;
+    background-image: url(./Deep_space.svg);
+}
+
+#deep-space {
+    width: 100vw;
+    height: auto;
 }
 
 #black-hole-container {
@@ -26,20 +34,30 @@ body {
     height: 5vmin;
     width: auto;
     margin: 0 auto;
+    -webkit-animation: vanishing 6s linear infinite;
     animation: vanishing 6s linear infinite;
     z-index: 20;
 }
 
+
+/*---- ANIMATION: STAR VANISHING AT THE EVENT HORIZON ----*/
+
 @keyframes vanishing {
     0% {
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
         transform: scale(1);
         opacity: 0.75;
     }
     15% {
+        -ms-transform: scale(2);
+        -webkit-transform: scale(2);
         transform: scale(2);
         opacity: 1;
     }
     30% {
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
         transform: scale(1);
         opacity: 0.5;
     }
@@ -51,11 +69,18 @@ body {
     }
 }
 
+/*---- ANIMATION: REVOLVING BLACK HOLE ----*/
+
 @keyframes slow-spin {
     0% {
-        transform:rotateZ(0);
+        -ms-transform: rotateZ(0);
+        -webkit-transform: rotateZ(0);
+        transform: rotateZ(0);
     }
     100% {
+        -ms-transform: rotateZ(360deg);
+        -webkit-transform: rotate(360deg);
         transform: rotateZ(360deg);
     }
 }
+

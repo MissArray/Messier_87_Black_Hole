@@ -6,6 +6,13 @@ An attempt to re-create the Messier 87 black hole with Adobe Illustrator and ani
 ## URL
 https://missarray.github.io/Messier_87_Black_Hole/
 
+## Licence
+Code: MIT
+
+## Concept & Graphics
+&copy; Artemis Gause 2019 - All rights reserved.
+
+
 ## Source
 The depicted black hole is not a modified image, but was created from scratch in Adobe Illustrator. The original image of the supermassive black hole at the heart of Messier 87 can be viewed here: 
 https://www.jpl.nasa.gov/images/universe/20190410/blackhole20190410-16.jpg
