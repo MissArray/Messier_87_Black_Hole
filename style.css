@@ -1,10 +1,11 @@
-/*Specifying the body background image in the CSS *and* including it inline in the index displays the image responsively. Not so if the img tag is omitted.*/
 
 body {
     display: flex;
     justify-content: center;
     background-color: black;
     background-image: url(./Deep_space.svg);
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 #deep-space {
@@ -39,6 +40,44 @@ body {
     z-index: 20;
 }
 
+button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 4.2rem;
+    width: 4.2rem;
+    background-color: rgba(77, 54, 54, 0.616);
+    border: 15px groove rgb(133, 140, 145);
+    border-color: rgba(0, 0, 0, 0.103);
+    border-radius: 50%;
+    color: silver;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#info {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    width: 30vw;
+    height: auto;
+    margin-top: 10px;
+    padding: 0.75rem;
+    color: gainsboro;
+    background-color: rgba(41, 37, 37, 0.7);
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    border-radius: 2px;
+}
+
+.p-bold {
+    font-weight: bold;
+}
+
+#info a {
+    color: aqua;
+}
 
 /*---- ANIMATION: STAR VANISHING AT THE EVENT HORIZON ----*/
 
