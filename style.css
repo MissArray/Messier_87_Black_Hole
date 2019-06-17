@@ -47,7 +47,7 @@ button {
     height: 4.2rem;
     width: 4.2rem;
     background-color: rgba(77, 54, 54, 0.616);
-    border: 15px groove rgb(133, 140, 145);
+    border: 15px outset rgb(133, 140, 145);
     border-color: rgba(0, 0, 0, 0.103);
     border-radius: 50%;
     color: silver;
@@ -123,3 +123,17 @@ button {
     }
 }
 
+/*---- MEDIA QUERIES ----*/
+
+@media screen and (max-width: 600px) and (orientation: portrait){
+
+#info {
+    top: 40vh;
+    width: 80vw;
+}
+
+button {
+    z-index: 50;
+}
+
+}
