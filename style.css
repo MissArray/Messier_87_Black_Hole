@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'Quantum';
+    src: 
+        local('Quantum'),
+        url('./Assets/Quantum.otf')
+        format('opentype');
+}
+
+@font-face {
+    font-family: 'QuantumCond';
+    src: 
+        local('QuantumCond'),
+        url('./Assets/QuantumCond.otf')
+        format('opentype');
+}
+
+@font-face {
+    font-family: 'IBMPlexSansCondensed-Medium';
+    src:
+        local(IBMPlexSansCondensed-Medium),
+        url('./Assets/IBMPlexSansCondensed-Medium.ttf')
+        format('truetype');
+}
 
 body {
     display: flex;
@@ -44,35 +67,51 @@ button {
     position: absolute;
     top: 20px;
     left: 20px;
-    height: 4.2rem;
-    width: 4.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.5rem;
+    width: 4.5rem;
     background-color: rgba(77, 54, 54, 0.616);
-    border: 15px outset rgb(133, 140, 145);
+    border: 10px outset rgb(133, 140, 145);
     border-color: rgba(0, 0, 0, 0.103);
-    border-radius: 50%;
+    border-radius: 1% 10%;
     color: silver;
-    font-size: 1.25rem;
-    font-weight: bold;
+    font-family: 'Quantum', Arial, sans-serif;
+    font-size: 1.953rem;
+}
+
+button:hover {
+    background-color: rgba(128, 59, 59, 0.507);
+    border-color: #441515b7;
 }
 
 #info {
     display: none;
     position: absolute;
-    top: 80px;
+    top: 100px;
     left: 20px;
     width: 30vw;
     height: auto;
-    margin-top: 10px;
-    padding: 0.75rem;
+    padding: 5px 10px;
     color: gainsboro;
-    background-color: rgba(41, 37, 37, 0.7);
-    font-family: Arial, sans-serif;
-    font-size: 1rem;
+    background-color: rgba(27, 25, 25, 0.85);
     border-radius: 2px;
 }
 
-.p-bold {
-    font-weight: bold;
+h1 {
+    font-family: 'Quantum', Arial, sans-serif;
+    font-size: 1.563rem;
+}
+
+h2 {
+    font-family: 'QuantumCond', Arial, sans-serif;
+    font-size: 1.25rem;
+}
+
+p {
+    font-family: 'IBMPlexSansCondensed-Medium', Arial, sans-serif;
+    font-size: 1rem;
 }
 
 #info a {
@@ -133,7 +172,10 @@ button {
 }
 
 button {
+    height: 3rem;
+    width: 3rem;
     z-index: 50;
+    font-size: 1.563rem;
 }
 
 }
