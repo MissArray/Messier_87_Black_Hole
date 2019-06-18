@@ -1,7 +1,7 @@
 # Messier_87_Black_Hole
 
 ## Description
-An attempt to re-create the Messier 87 black hole with Adobe Illustrator and animate it with CSS.
+An attempt to re-create the Messier 87 black hole with Adobe Illustrator and animate it with CSS. The animation is coded entirely in CSS. A tiny bit of JavaScript was used to toggle the details panel.
 
 ## URL
 https://missarray.github.io/Messier_87_Black_Hole/

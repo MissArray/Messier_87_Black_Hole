@@ -2,7 +2,7 @@
     font-family: 'Quantum';
     src: 
         local('Quantum'),
-        url('./Assets/Quantum.otf')
+        url('./Assets/Quantum.otf'),
         format('opentype');
 }
 
@@ -10,7 +10,7 @@
     font-family: 'QuantumCond';
     src: 
         local('QuantumCond'),
-        url('./Assets/QuantumCond.otf')
+        url('./Assets/QuantumCond.otf'),
         format('opentype');
 }
 
@@ -18,7 +18,7 @@
     font-family: 'IBMPlexSansCondensed-Medium';
     src:
         local(IBMPlexSansCondensed-Medium),
-        url('./Assets/IBMPlexSansCondensed-Medium.ttf')
+        url('./Assets/IBMPlexSansCondensed-Medium.ttf'),
         format('truetype');
 }
 
@@ -84,6 +84,7 @@ button {
 button:hover {
     background-color: rgba(128, 59, 59, 0.507);
     border-color: #441515b7;
+    border-radius: 50%;
 }
 
 #info {
@@ -95,7 +96,7 @@ button:hover {
     height: auto;
     padding: 5px 10px;
     color: gainsboro;
-    background-color: rgba(27, 25, 25, 0.85);
+    background-color: rgba(22, 21, 21, 0.85);
     border-radius: 2px;
 }
 
